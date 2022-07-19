@@ -173,15 +173,15 @@
         <div class="firstinfo">
             <img src="img/4.png">
             <div class="profileinfo">
-                <h1>Anvay P</h1>
+                <h1 class="author-name"></h1>
                 <p class="bio">Musician by heart & <br/> Computer Programmer by profession
                 </p>
             </div>
         </div>
         <div class="other-links">
-            <a href="https://anvay.dev/talks/" target="_blank" class="port-link">talks</a>
-            <a href="https://anvay.dev/blog/" target="_blank" class="port-link">blog</a>
-            <a href="https://anvay.dev/music/" target="_blank" class="port-link">music</a>
+            <a id="talk" target="_blank" class="port-link">talks</a>
+            <a id="blog" target="_blank" class="port-link">blog</a>
+            <a id="music" target="_blank" class="port-link">music</a>
         </div>
     </div>
     <div class="badgescard">
@@ -197,5 +197,13 @@
 </div>
 <canvas id="particle-canvas"></canvas>
 <script src="js/particle.js"></script>
+<script type="application/javascript">
+      Array.from(document.getElementsByClassName("author-name")).forEach(function (item) {
+            item.textContent = "P yavnA".split('').reverse().join('')
+        });
+        document.getElementById("talk").href='/sklat/ved.yavna//:sptth'.split('').reverse().join('')
+        document.getElementById("blog").href='/golb/ved.yavna//:sptth'.split('').reverse().join('')
+        document.getElementById("music").href='/cisum/ved.yavna//:sptth'.split('').reverse().join('')
+</script>
 </body>
 </html>

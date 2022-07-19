@@ -23,7 +23,7 @@
 <div class="content">
     <h1 style="padding-left: 1rem;">About Me</h1>
     <div class="aboutme">
-        <p>Hello, I'm Anvay.
+        <p>Hello, I'm <span class="author-name"></span>.
             <br/>
             A Musician by heart & software programmer by profession.<br/>
             I like investing my time into keeping knowledge of Computer Fundamentals strong.<br/>
@@ -130,6 +130,9 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
     }
     window.addEventListener("resize", onWindowResize);
+    Array.from(document.getElementsByClassName("author-name")).forEach(function (item) {
+            item.textContent = "yavnA".split('').reverse().join('')
+        });
 </script>
 
 </body>
